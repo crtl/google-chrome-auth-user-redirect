@@ -1,0 +1,23 @@
+{
+  "name": "Google Cloud Auth User Redirect",
+  "version": "1.0",
+  "description": "Automatically sets preferred authuser url param on console.cloud.google.com urls.",
+  "manifest_version": 2,
+  "page_action": {
+    "default_popup": "popup.html"
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": false
+  },
+  "permissions": [
+    "storage",
+    "webRequest",
+    "webRequestBlocking",
+    "https://console.cloud.google.com/"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  }
+}

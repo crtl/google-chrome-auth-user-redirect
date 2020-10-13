@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Google Cloud Auth User</title>
+
+    <style>
+        label, input {
+            font-size: 1.4em;
+        }
+
+        .input-wrapper {
+            margin-bottom: 10px;
+
+            display: flex;
+        }
+
+        label {
+            width: 90px;
+        }
+
+        #input-user-index {
+            width: 50px;
+        }
+
+        #status-message {
+            font-size: 1.4em;
+            color: green;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div class="input-wrapper">
+    <label for="input-enabled">
+        Enabled
+    </label>
+    <input type="checkbox" id="input-enabled">
+</div>
+
+<div class="input-wrapper">
+    <label for="input-user-index">User Index</label>
+    <input type="number" id="input-user-index" name="userIndex"/>
+</div>
+
+<div id="status"></div>
+<button id="submit">Save</button>
+
+<script src="options.js"></script>
+</body>
+</html>
